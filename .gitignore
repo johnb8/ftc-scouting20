@@ -5,3 +5,4 @@ app/platforms
 app/plugins
 app/node_modules
 !app/res/icon
+.jekyll-cache/
