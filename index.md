@@ -39,11 +39,11 @@ files: |
 				</div>
 				<div class="row" style="margin-top:15px">
 					<div class="col-md input-group">
-						<a onclick="modifyBlockQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
+						<a onclick="modifyAutoBlockQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
 						 role="button">-</a>
 						<input id="autoBlocks" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
 						 autocomplete="off" type="tel" class="form-control" value="0">
-						<a onclick="modifyBlockQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
+						<a onclick="modifyAutoBlockQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
 						 role="button">+</a>
 					</div>
 				</div>
@@ -73,11 +73,11 @@ files: |
 				</div>
 				<div class="row" style="margin-top:15px">
 					<div class="col-md input-group">
-						<a onclick="modifyPlaceQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
+						<a onclick="modifyAutoPlaceQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
 						 role="button">-</a>
 						<input id="autoPlace" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' autocomplete="off"
 						 type="tel" class="form-control" value="0">
-						<a onclick="modifyPlaceQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
+						<a onclick="modifyAutoPlaceQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
 						 role="button">+</a>
 					</div>
 				</div>
@@ -103,8 +103,7 @@ files: |
 					</label>
 					<label id="parkedOnLineNo" class="btn btn-secondary">
 						<input type="radio" value="0" name="parkedOnLine" id="parkedOnLineNo" autocomplete="off"> No
-					</label>
-					
+					</label>			
 				</div>
 			</div>
 		</div>
@@ -122,11 +121,11 @@ files: |
 				</div>
 				<div class="row" style="margin-top:15px">
 					<div class="col-md input-group">
-						<a onclick="modifyBlockQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
+						<a onclick="modifyTeleopBlockQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
 						 role="button">-</a>
 						<input id="teleopBlocks" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
 						 autocomplete="off" type="tel" class="form-control" value="0">
-						<a onclick="modifyBlockQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
+						<a onclick="modifyTeleopBlockQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
 						 role="button">+</a>
 					</div>
 				</div>
@@ -139,11 +138,11 @@ files: |
 				</div>
 				<div class="row" style="margin-top:15px">
 					<div class="col-md input-group">
-						<a onclick="modifyBlockQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
+						<a onclick="modifyTeleopPlaceQuant(-1)" class="btn btn-danger btn-lg" style="width: 50px; height: 50px; margin-right: 15px;"
 						 role="button">-</a>
 						<input id="teleopPlaced" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
 						 autocomplete="off" type="tel" class="form-control" value="0">
-						<a onclick="modifyBlockQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
+						<a onclick="modifyTeleopPlaceQuant(1)" class="btn btn-success btn-lg" style="width: 50px; height: 50px; margin-left: 15px;"
 						 role="button">+</a>
 					</div>
 				</div>
@@ -203,6 +202,6 @@ files: |
 			</div>
 		</div>
 		<hr />
-		<button id="submit" class="btn btn-success" type="button">Submit</button>
+		<button id="Submit" class="btn btn-success" type="button">Submit</button>
 	</form>
 </div>
