@@ -10,12 +10,7 @@ $(document).ready(function () {
         var serverUsername = localStorage.getItem('serverUsername');
         var serverPassword = localStorage.getItem('serverPassword');
         if (localStorage.getItem('settingsCheck') == 1) {
-            var syncdb;
-            if (window.cordova) {
-                syncdb = new PouchDB(databaseName, {adapter: 'cordova-sqlite'});
-            } else {
-                syncdb = databaseName;
-            }    
+            let syncdb = databaseName;
             $.ajax({
                 xhrFields: {
                     withCredentials: true
